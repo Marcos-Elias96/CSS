@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Mascotas</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: rgb(64, 158, 212);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: rgb(43, 43, 160);
+            color: rgb(10, 13, 19);
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO DE REGISTRO DE MOTO O VEHICULO</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="tipo">Marca</label>
+        <select id="tipo" name="tipo">
+            <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+            <option value="09 SPORT">09 SPORT</option>
+        </select>
+
+        <label for="En vigencia?">¿En vigencia?</label>
+        <input type="checkbox" id="2024" name="En vigencia?"> 2024
+     
+        <input type="checkbox" id="En vigencia?" name="En vigencia?"> Sí
+        <input type="radio" id="masc" name="En vigencia" value="macho">No
+        <input type="radio" id="hembra" name="En vigencia" value="hembra">
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
